@@ -1,0 +1,109 @@
+SampleName Pull
+
+Kekkai Sensen
+Fate/stay night: Unlimited Blade Works 2nd Season
+The God of High School
+Magi: The Kingdom of Magic
+Boruto: Naruto Next Generations
+Trinity Seven
+Akatsuki no Yona
+Overlord III
+Zero no Tsukaima
+Tensei shitara Slime Datta Ken 2nd Season
+Toaru Majutsu no Index
+Tokyo Ghoul:re 2nd Season
+FLCL
+Akira
+Koutetsujou no Kabaneri
+High School DxD BorN
+Banana Fish
+Dragon Ball Super
+Gate: Jieitai Kanochi nite, Kaku Tatakaeri
+InuYasha
+Bungou Stray Dogs 2nd Season
+K
+Owari no Seraph: Nagoya Kessen-hen
+Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka II
+Ao no Exorcist: Kyoto Fujouou-hen
+Accel World
+Trigun
+Hai to Gensou no Grimgar
+Hellsing
+Sword Art Online Movie: Ordinal Scale
+Boku no Hero Academia the Movie 1: Futari no Hero
+Nanatsu no Taizai: Seisen no Shirushi
+D.Gray-man
+Sword Art Online: Alicization - War of Underworld
+Blood Lad
+Rokudenashi Majutsu Koushi to Akashic Records
+Nanatsu no Taizai: Kamigami no Gekirin
+91 Days
+Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou
+Claymore
+Enen no Shouboutai: Ni no Shou
+Shinmai Maou no Testament
+Yuu☆Yuu☆Hakusho
+Gakusen Toshi Asterisk
+Psycho-Pass 2
+Strike the Blood
+IS: Infinite Stratos
+Kore wa Zombie Desu ka?
+Rokka no Yuusha
+Tate no Yuusha no Nariagari Season 2
+Dragon Ball GT
+Pokemon
+Arifureta Shokugyou de Sekai Saikyou
+Inuyashiki
+Log Horizon 2nd Season
+Koukaku Kidoutai
+Toaru Kagaku no Railgun
+Tensei shitara Slime Datta Ken 2nd Season Part 2
+Zetsuen no Tempest
+Sword Art Online Alternative: Gun Gale Online
+Beelzebub
+86
+Kenpuu Denki Berserk
+Great Pretender
+Gintama°
+Ajin
+Mondaiji-tachi ga Isekai kara Kuru Sou Desu yo?
+Hunter x Hunter
+The Last: Naruto the Movie
+Gangsta.
+Kuroshitsuji II
+Katekyo Hitman Reborn!
+Katanagatari
+Shinchou Yuusha: Kono Yuusha ga Ore Tueee Kuse ni Shinchou Sugiru
+Absolute Duo
+Shakugan no Shana
+Sword Art Online: Alicization - War of Underworld 2nd Season
+God Eater
+Drifters
+Bungou Stray Dogs 3rd Season
+Gate: Jieitai Kanochi nite, Kaku Tatakaeri Part 2
+Evangelion: 1.0 You Are (Not) Alone
+Kenja no Mago
+Musaigen no Phantom World
+Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III
+Aldnoah.Zero
+Ichiban Ushiro no Daimaou
+Gintama'
+Boku no Hero Academia the Movie 2: Heroes:Rising
+Evangelion: 2.0 You Can (Not) Advance
+Zero no Tsukaima: Futatsuki no Kishi
+Darwin's Game
+Sousei no Onmyouji
+Black Lagoon: The Second Barrage
+Full Metal Panic!
+Kimetsu no Yaiba: Mugen Ressha-hen
+Rurouni Kenshin: Meiji Kenkaku Romantan
+Shingeki no Kyojin: Kuinaki Sentaku
+Tokyo Ravens
+Durarara!!x2 Shou
+
+Members to scrape
+js-genre
+info
+js-score
+js-members
+js-startdate
