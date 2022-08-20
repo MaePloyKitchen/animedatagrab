@@ -97,10 +97,24 @@ def get_anime_advanced(url):
     return mapped_data
 
 def get_anime_stats(url):
+    results = dict()
     link = link_build_advanced(url,"stats")
     webpage = requests.get(link)
     soup = BeautifulSoup(webpage.content, "html.parser")
-    
+    container = soup.find_all(class_="rightside")[0]
+    data = container.find_all(class_="spaceit_pad")
+    view_stats_columns = [d.text.split(":")[0] for d in data[:6]]
+    view_stats_data = [d.text.split(":")[1].strip() for d in data[:6]]
+    mapped_view_stats = dict(zip(view_stats_columns,view_stats_data))
+    results["Stats_Tab"] = mapped_view_stats
+    ranking_data_percents = [d.text.split(" ")[0].replace("\xa0","") for d in data[6:]]
+    ranking_data_votes = [d.text.split(" ")[1].strip("(") for d in data[6:]]
+    ranking_data_columns = [num for num in range(10,0,-1)]
+    mapped_data = dict()
+    for ind , column in enumerate(ranking_data_columns):
+        mapped_data[column] = {"Percent":ranking_data_percents[ind],"Votes":ranking_data_votes[ind]}
+    results["Ranking"] = mapped_data
+    return results
 
     
 
