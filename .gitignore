@@ -1,0 +1,5 @@
+build
+dist
+animedatagrablib.egg-info
+.eggs
+.pytest_cache
