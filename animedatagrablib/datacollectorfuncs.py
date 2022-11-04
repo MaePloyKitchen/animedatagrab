@@ -5,7 +5,7 @@ import json
 # import time
 
 
-def link_build_basic(genre, page):
+def link_build_basic(genre, page,media):
 
     id_genre_mapping = {
         "Action": 1,
@@ -29,13 +29,18 @@ def link_build_basic(genre, page):
         "Ecchi": 9,
         "Erotica": 49,
         "Hentai": 12,
+        "Adult_Cast":50,
+        "Anthropomorphic":51,
+        "CGDCT":52,
+        "Childcare":53,
+        "Combat_Sports":54,
+        "Crossdressing":81,
+        "Delinquents":55,
+        "Detective":39
     }
 
-    link = f"https://myanimelist.net/anime/genre/{id_genre_mapping[genre]}/{genre}?page={page}"
-    # webpage = requests.get(link)
-    # soup = BeautifulSoup(webpage.content, "html.parser")
-    # containers = soup.find_all(class_="js-anime-category-producer")
-    # return contain
+    link = f"https://myanimelist.net/{media}/genre/{id_genre_mapping[genre]}/{genre}?page={page}"
+    
     return link
 
 def link_build_advanced(url,token):
@@ -118,5 +123,36 @@ def get_anime_stats(url):
 
     
 
-def get_anime_characters(url):
-    link_build_advanced(url,"characters")
+def get_anime_voice_actors(url):
+    results = []
+    link = link_build_advanced(url,"characters")
+    webpage = requests.get(link)
+    soup = BeautifulSoup(webpage.content, "html.parser")
+    characters = soup.find_all(class_="js-anime-character-table")
+    for character in characters:
+        #Character Names
+        char = dict()
+        char["Name"] = character.find(class_="js-chara-roll-and-name").text.strip()
+        #Number of Favorites
+        char["Favorites"] = character.find(class_="js-anime-character-favorites").text.strip()
+        voice_actors_container = character.find_all(class_="js-anime-character-va-lang")
+        voice_actor_dict = dict()
+        for ind,voice in enumerate(voice_actors_container):
+            #VA one
+            va = dict()
+            con = voice.find(class_="spaceit_pad")
+            va["Name"] = con.text.strip()
+            va["Link"] = con.find("a",href=True)["href"]
+            #VA Language
+            va["Language"] = voice.find(class_="js-anime-character-language").text.strip()
+            voice_actor_dict[f"{ind}"] = va
+        char["Voice_Actors"] = voice_actor_dict
+        results.append(char)
+    return results
+
+
+def get_manga_basic(genre, page):
+    pass
+
+def get_manga_advanced(url):
+    pass
